@@ -5,7 +5,7 @@
    "main": "index.js",
    "scripts": {
       "build":"npm install --prefix ServerSide && npm install --prefix Client_side && npm run build --prefix Client_side",
-      "start":"npm run start --prefix ServerSide"
+      "start":"npm start --prefix ServerSide"
    },
    "keywords": [],
    "author": "",

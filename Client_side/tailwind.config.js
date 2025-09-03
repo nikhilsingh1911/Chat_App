@@ -1,5 +1,4 @@
-// @ts-ignore
-require("daisyui");
+// require("daisyui");
 import daisyui from "daisyui";
 /** @type {import('tailwindcss').Config} */
 export default {
