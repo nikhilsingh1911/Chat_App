@@ -10,17 +10,23 @@ const io = new Server(server, {
   },
 });
 
+export function getReceiverSocketId(userId) {
+  return userSocketMap[userId];
+}
+
 //to store users who are online
 const userSocketMap = {}; // {userId: socketId}
 
 io.on("connection", (socket) => {
   console.log("A user Connected", socket.id);
   const userId = socket.handshake.query.userId;
-  if (userId) userSocketMap[userId] = socket.id;
+  if (userId) {
+    userSocketMap[userId] = socket.id;
+  }
   //to sedn events to all the connect users
   io.emit("getOnlineUsers", Object.keys(userSocketMap));
 
-  socket.on("disconnected", () => {
+  socket.on("disconnect", () => {
     console.log("A user DisConnected", socket.id);
     delete userSocketMap[userId];
     io.emit("getOnlineUsers", Object.keys(userSocketMap));
