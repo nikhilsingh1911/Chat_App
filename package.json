@@ -1,0 +1,13 @@
+{
+   "name": "chat-app",
+   "version": "1.0.0",
+   "description": "",
+   "main": "index.js",
+   "scripts": {
+      "build":"npm install --prefix ServerSide && npm install --prefix Client_side && npm run build --prefix Client_side",
+      "start":"npm run start --prefix ServerSide"
+   },
+   "keywords": [],
+   "author": "",
+   "license": "ISC"
+}
