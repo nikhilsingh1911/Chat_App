@@ -8,7 +8,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
-/ServerSide/node_modules
+# /ServerSide/node_modules
 
 
 dist
@@ -26,6 +26,6 @@ dist-ssr
 *.sln
 *.sw?
 
-README.md
+# README.md
 .env
 # //.env bhi commit ho rhi h kese bdlu ise m ab
