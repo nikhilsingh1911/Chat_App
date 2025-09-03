@@ -6,16 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
-
-node_modules
-# /ServerSide/node_modules
-
-
 dist
 dist-ssr
 *.local
-
-# Editor directories and files
 .vscode/*
 !.vscode/extensions.json
 .idea
@@ -26,6 +19,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# README.md
 .env
+node_modules
+
+
+
 # //.env bhi commit ho rhi h kese bdlu ise m ab
